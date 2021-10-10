@@ -1,0 +1,7 @@
+d1: Static block, Instance Initiation block, static method, input from cmd line
+
+d2:
+
+d3:
+
+d4:Layered Architecture Employee model
