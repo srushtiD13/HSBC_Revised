@@ -5,3 +5,5 @@ d2:
 d3:
 
 d4:Layered Architecture Employee model
+
+d5: Exceptions in Layered Architecture
