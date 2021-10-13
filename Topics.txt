@@ -6,6 +6,6 @@ d3:
 
 d4:Layered Architecture Employee model
 
-d5: Exceptions in Layered Architecture, Impl of ArrayList and TreeSet
+d5: Exceptions in Layered Architecture, Impl of ArrayList and TreeSet, Correct way of creating multiple Dao instances, JDBC Impl
 
 d6: Collections

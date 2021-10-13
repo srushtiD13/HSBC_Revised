@@ -15,7 +15,7 @@ public class ViewController {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		
-		System.out.println("Enter your choice to use Database: 1. Array  2. ArrayList  3. TreeSet");
+		System.out.println("Enter your choice to use Database: 1. Array  2. ArrayList  3. TreeSet  4. MySQL DB");
 		int option=Integer.parseInt(sc.next());
 		
 		EmployeeDao empDao=EmployeeDaoFactory.getDaoObj(option);//getting option to select DB
