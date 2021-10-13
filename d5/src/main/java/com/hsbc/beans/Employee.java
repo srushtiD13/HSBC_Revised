@@ -1,6 +1,8 @@
 package com.hsbc.beans;
 
-public class Employee {
+import java.util.Objects;
+
+public class Employee implements Comparable<Employee>{
 	String name;
 	int id;
 	double salary;
@@ -52,6 +54,29 @@ public class Employee {
 		builder.append(salary);
 		builder.append("]");
 		return builder.toString();
+	}
+
+	@Override
+	public int compareTo(Employee o) {
+		
+		return id-o.getId();
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		return id == other.id;
 	}
 	
 	

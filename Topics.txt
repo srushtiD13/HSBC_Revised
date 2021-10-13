@@ -6,4 +6,6 @@ d3:
 
 d4:Layered Architecture Employee model
 
-d5: Exceptions in Layered Architecture
+d5: Exceptions in Layered Architecture, Impl of ArrayList and TreeSet
+
+d6: Collections

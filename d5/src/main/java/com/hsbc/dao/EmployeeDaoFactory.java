@@ -4,7 +4,7 @@ public class EmployeeDaoFactory {
 	
 	public static EmployeeDao getDaoObj()
 	{
-		EmployeeDao dao=new EmployeeDaoImpl(); 
+		EmployeeDao dao=new EmployeeDaoTreeSetImpl(); 
 		return dao;
 	}
 	

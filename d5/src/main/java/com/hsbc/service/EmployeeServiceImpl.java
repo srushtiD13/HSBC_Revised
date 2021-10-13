@@ -33,7 +33,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	}
 
 	@Override
-	public Employee[] finadAllEmployees() {
+	public Object[] finadAllEmployees() {
 		
 		return dao.finadAllEmployees();
 	}

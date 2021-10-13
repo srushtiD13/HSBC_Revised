@@ -6,7 +6,7 @@ import com.hsbc.exceptions.EmployeeAlreadyExistsException;
 public interface EmployeeDao {
 	public void save(Employee employee)throws EmployeeAlreadyExistsException;
 	public Employee fetchEmployeeById(int id);
-	public Employee[] finadAllEmployees();
+	public Object[] finadAllEmployees();
 	public void updateEmployee(int id,Employee employee);
 
 }

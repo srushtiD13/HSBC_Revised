@@ -58,13 +58,13 @@ public class ViewController {
 					break;
 					
 				case 3:
-					Employee[] array=service.finadAllEmployees();
+					Object[] array=service.finadAllEmployees();
 					if(array==null)
 					{
 						System.out.println("Database is EMPTY!");
 						break;
 					}
-					for(Employee e:array)
+					for(Object e:array)
 					{
 						System.out.println(e);
 					}
@@ -104,6 +104,7 @@ public class ViewController {
 			
 		}while(choice!=0);
 		System.out.println("EXITED");
+		System.exit(0);
 		
 		sc.close();
 	}
