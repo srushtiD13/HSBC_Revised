@@ -3,6 +3,8 @@ package com.hsbc.view_controller;
 import java.util.Scanner;
 
 import com.hsbc.beans.Employee;
+import com.hsbc.dao.EmployeeDao;
+import com.hsbc.dao.EmployeeDaoFactory;
 import com.hsbc.exceptions.EmployeeAlreadyExistsException;
 import com.hsbc.exceptions.EmployeeNotFoundException;
 import com.hsbc.service.EmployeeService;
@@ -13,7 +15,11 @@ public class ViewController {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		
-		EmployeeService service=EmployeeServiceFactory.getServiceObj();//creating obj for accessing services
+		System.out.println("Enter your choice to use Database: 1. Array  2. ArrayList  3. TreeSet");
+		int option=Integer.parseInt(sc.next());
+		
+		EmployeeDao empDao=EmployeeDaoFactory.getDaoObj(option);//getting option to select DB
+		EmployeeService service=EmployeeServiceFactory.getServiceObj(empDao);//creating obj for accessing services
 		int choice=0;
 		do{
 			System.out.println("Enter your choice: ");

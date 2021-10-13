@@ -11,8 +11,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	private EmployeeDao dao=null;//creating object of DAO
 	
 	
-	public EmployeeServiceImpl() {
-		dao=EmployeeDaoFactory.getDaoObj();
+	public EmployeeServiceImpl(EmployeeDao dao) {
+		this.dao=dao;
 	
 	}
 
